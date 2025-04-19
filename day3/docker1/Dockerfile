@@ -1,10 +1,10 @@
 FROM python:3.11-slim
 
 WORKDIR /app
-COPY requirements.txt .
-COPY app.py .
-COPY templates templates/
-COPY static static/
+COPY /giropops-senhas/requirements.txt .
+COPY /giropops-senhas/app.py .
+COPY /giropops-senhas/templates templates/
+COPY /giropops-senhas/static static/
 
 RUN  pip install -r requirements.txt
 
